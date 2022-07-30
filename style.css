@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Typography */
+  --regular-font: "Lato", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  --heading-font: "Roboto Mono", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    monospace, sans-serif;
+
+  /* h5 font size paragraph */
+
+  --font-size-s-h1: 3.052rem;
+
+  --font-size-s-h2: 2.441rem;
+
+  --font-size-s-h3: 1.953rem;
+
+  --font-size-s-h4: 1.563rem;
+
+  --font-size-s-h5: 1.25rem;
+  /* major third 1.250 */
+  --font-size-s-h6: 1rem;
+  --line-height: 1.75;
+
+  --box-shadow-1: 2px 4px 6px #000;
+
+  --transition-8: all 0.8s ease-in-out;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--regular-font);
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: var(--font-size-s-h1);
+}
+h2 {
+  font-size: var(--font-size-s-h2);
+}
+h3 {
+  font-size: var(--font-size-s-h3);
+}
+h4 {
+  font-size: var(--font-size-s-h4);
+}
+h5 {
+  font-size: var(--font-size-s-h5);
+}
+h6 {
+  font-size: var(--font-size-s-h6);
+}
+p {
+  font-size: var(--font-size-s-h5);
+}
+
+.section-center {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 90vw;
+  margin-top: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1rem 1rem;
+  overflow: hidden;
+}
+
+.card {
+  height: 25rem;
+  background-color: #a475bc;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-1);
+  transition: var(--transition-8);
+}
+
+.card i {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  transition: var(--transition-8);
+}
+
+.card i:hover {
+  transform: scale(1.7);
+  color: rgb(17, 17, 17);
+}
+
+.card p {
+  padding: 2rem;
+  text-align: left;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: var(--font-size-s-h5);
+  letter-spacing: 2px;
+  border: transparent;
+  background-color: #009898;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: var(--transition-8);
+  border: 1px solid white;
+}
+
+.btn:hover {
+  background-color: #a475bc;
+  transform: translateY(15%) scale(1.2);
+}
+
+.card:hover {
+  background-color: #009898;
+}
